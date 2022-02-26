@@ -1,0 +1,51 @@
+.advertisement {
+
+    margin: 0 160px 120px 160px;
+
+    @include laptop {
+        margin: 0 60px 120px 60px;
+    }
+
+    @include phones {
+        margin: 0 20px 70px 20px;
+    }
+
+    &__title {
+        margin: 0 0 60px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        color: $fourthColorLetters;
+
+        @include laptop {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include phones {
+            font-size: 12px;
+            line-height: 18px;
+            margin: 0 0 20px 0;
+        }
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 40px;
+        color: $pramaryColorLetters;
+
+        @include laptop {
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        @include phones {
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}

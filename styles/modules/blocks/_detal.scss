@@ -1,0 +1,100 @@
+.detal {
+    margin: 0 160px 120px 160px;
+
+    @include laptop {
+        margin: 0 60px 120px 60px;
+    }
+
+    @include phones {
+        margin: 0 20px 70px 20px;
+    }
+
+    &__items {
+        margin: 0;
+        display: flex;
+        max-width: 1120px;
+        width: 100%;
+        padding: 0;
+
+        @include laptop {
+            flex-direction: column;
+        }
+    }
+
+    &__item {   
+        padding: 40px;
+        background: $sixthColorBackground;
+        border-radius: 16px;
+        margin: 0 20px 0 0;
+        list-style-type: none;
+
+        @include laptop {
+            margin: 0 0 20px 0;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        @include phones {
+            padding: 20px;
+        }  
+
+        &-text {
+            margin: 0 0 20px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 18px;
+            color: $fourthColorLetters;
+
+            @include phones {
+                margin: 0 0 10px 0;
+            }  
+        }
+
+        &-title {
+            margin: 0 0 40px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 32px;
+            color: $pramaryColorLetters;
+
+            @include phones {
+                font-size: 24px;
+                line-height: 32px;
+                margin: 0 0 28px 0;
+            } 
+        }
+
+        &-subtitle {
+            margin: 0 0 40px 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 40px;
+            color: $fourthColorLetters;
+
+            @include phones {
+                font-size: 12px;
+                line-height: 18px;
+                margin: 0 0 100px 0;
+            } 
+        }
+
+        &-price {
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 14px;
+            color: $fifthColorLetters;
+
+            @include phones {
+                font-size: 12px;
+                line-height: 18px;
+            } 
+        }
+    }
+}

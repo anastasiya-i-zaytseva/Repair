@@ -1,0 +1,154 @@
+.footer {
+    margin: 0 160px 60px 160px;
+
+    @include laptop {
+        margin: 0 60px 60px 60px;
+    }
+
+    @include phones {
+        margin: 0 20px 20px 20px;
+    }
+
+    &__line {
+        border-bottom: 2px solid #151515;
+        margin: 0 0 60px 0;
+
+        @include phones {
+            margin: 0 0 30px 0;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 84px;
+
+        @include laptop {
+            margin-bottom: 84px;
+        }
+
+        &-title {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 30px;
+            color: $pramaryColorLetters;
+            margin: 0 20px 0 0;
+
+            @include phones {
+                font-size: 20px;
+                line-height: 28px;
+                margin: 0 16px 0 0;
+            }
+        }
+
+        &-subtitle {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 12px;
+            color: $secondaryColorLetters;
+            background-color: $thirdColorBackground;
+            border-radius: 4px;
+            padding: 4px 8px 4px 8px;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &__form {
+        margin: 0 0 18px 0;
+
+        @include laptop {
+            margin: 0 0 10px 0;
+        }
+
+        &-input {
+            background-color: $fourthColorBackground;
+            border-radius: 8px 0px 0px 8px;
+            margin: 0;
+            height: 50px;
+            box-sizing: border-box;
+            max-width: 427px;
+            border-color: $fourthColorBackground;
+            color: $pramaryColorLetters;
+            padding: 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $seventhColorBackground;
+            }
+        }
+
+        &-btn-save {
+            background: $fifthColorBackground;
+            color: $fifthColorBackground;
+            border-radius: 0px 8px 8px 0px;
+            margin: 0 0 0 -5px;
+            height: 50px;
+            font-size: 13px;
+            line-height: 20px;
+            max-width: 221px;
+            width: 100%;
+            padding: 0;
+
+            @include tablets {
+                font-size: 10px;
+                line-height: 10px;
+                padding: 20px;
+                width: 23%;
+            }
+
+            &-item {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.375px;
+                color: $pramaryColorLetters;
+                margin-right: 10px;                
+            
+                @include tablets {
+                    display: none;                    
+                }
+
+            }
+        }
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+
+        @include laptop {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $thirdColorLetters;
+
+        @include laptop {
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include phones {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
