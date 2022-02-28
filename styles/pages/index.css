@@ -462,8 +462,9 @@ template {
   background-color: rgba(142, 142, 152, 0.3);
 }
 .header__form-btn-save {
-  background: #47474C;
+  background-color: #47474C;
   color: #47474C;
+  border: none;
   border-radius: 0px 8px 8px 0px;
   margin: 0 0 0 -5px;
   height: 50px;
@@ -1015,6 +1016,7 @@ template {
 .footer__form-btn-save {
   background: #47474C;
   color: #47474C;
+  border: none;
   border-radius: 0px 8px 8px 0px;
   margin: 0 0 0 -5px;
   height: 50px;
