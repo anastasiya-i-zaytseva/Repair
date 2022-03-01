@@ -536,84 +536,84 @@ template {
     display: block;
   }
 }
-.photo__grid1 {
+.photo__grid-top {
   display: grid;
   grid-template-columns: [start] 448px [end] calc(100% - 448px - 20px);
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
 @media screen and (max-width: 992px) {
-  .photo__grid1 {
+  .photo__grid-top {
     grid-template-columns: [start] 448px [end] calc(100% - 448px - 20px);
   }
 }
 @media screen and (max-width: 480px) {
-  .photo__grid1 {
+  .photo__grid-top {
     display: block;
   }
 }
-.photo__grid1-card1 {
+.photo__grid-top-card-one {
   width: 100%;
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media screen and (max-width: 480px) {
-  .photo__grid1-card1 {
+  .photo__grid-top-card-one {
     height: 142px;
     margin-bottom: 20px;
     border-radius: 4px;
   }
 }
-.photo__grid1-card2 {
+.photo__grid-top-card-two {
   background-color: #FFD233;
   border-radius: 10px;
   width: 100%;
   margin: 0;
 }
 @media screen and (max-width: 480px) {
-  .photo__grid1-card2 {
+  .photo__grid-top-card-two {
     height: 67px;
     margin-bottom: 20px;
     border-radius: 4px;
   }
 }
-.photo__grid2 {
+.photo__grid-buttom {
   display: grid;
   grid-template-columns: [start] calc(100% - 730px - 20px) [end] 730px;
   -moz-column-gap: 20px;
        column-gap: 20px;
 }
 @media screen and (max-width: 992px) {
-  .photo__grid2 {
+  .photo__grid-buttom {
     grid-template-columns: [start] calc(100% - 455px - 20px) [end] 455px;
     -moz-column-gap: 20px;
          column-gap: 20px;
   }
 }
 @media screen and (max-width: 480px) {
-  .photo__grid2 {
+  .photo__grid-buttom {
     display: block;
   }
 }
-.photo__grid2-card3 {
+.photo__grid-buttom-card-three {
   background: #25E197;
   border-radius: 10px;
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-  .photo__grid2-card3 {
+  .photo__grid-buttom-card-three {
     height: 124px;
     margin-bottom: 20px;
     border-radius: 4px;
   }
 }
-.photo__grid2-card4 {
+.photo__grid-buttom-card-four {
   border-radius: 10px;
   width: 100%;
 }
 @media screen and (max-width: 480px) {
-  .photo__grid2-card4 {
+  .photo__grid-buttom-card-four {
     height: 211px;
     border-radius: 4px;
   }
@@ -844,16 +844,16 @@ template {
 }
 
 .information {
-  margin: 0 160px 240px 160px;
+  margin: 0 160px 0 160px;
 }
 @media screen and (max-width: 992px) {
   .information {
-    margin: 0 60px 210px 60px;
+    margin: 0 60px 0 60px;
   }
 }
 @media screen and (max-width: 480px) {
   .information {
-    margin: 0 20px 180px 20px;
+    margin: 0 20px 0 20px;
   }
 }
 .information__title {
@@ -901,22 +901,26 @@ template {
   }
 }
 .information__subtitle {
-  margin: 50px 0 0 0;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 40px;
   color: #8E8E98;
+  border-bottom: 2px solid #151515;
+  padding-bottom: 240px;
+  margin: 50px 0 0 0;
 }
 @media screen and (max-width: 992px) {
   .information__subtitle {
     margin: 40px 0 0 0;
     font-size: 20px;
     line-height: 30px;
+    padding-bottom: 210px;
   }
 }
 @media screen and (max-width: 480px) {
   .information__subtitle {
+    padding-bottom: 180px;
     margin: 30px 0 0 0;
     font-size: 12px;
     line-height: 18px;
@@ -924,25 +928,16 @@ template {
 }
 
 .footer {
-  margin: 0 160px 60px 160px;
+  margin: 60px 160px 60px 160px;
 }
 @media screen and (max-width: 992px) {
   .footer {
-    margin: 0 60px 60px 60px;
+    margin: 60px 60px 60px 60px;
   }
 }
 @media screen and (max-width: 480px) {
   .footer {
-    margin: 0 20px 20px 20px;
-  }
-}
-.footer__line {
-  border-bottom: 2px solid #151515;
-  margin: 0 0 60px 0;
-}
-@media screen and (max-width: 480px) {
-  .footer__line {
-    margin: 0 0 30px 0;
+    margin: 30px 20px 20px 20px;
   }
 }
 .footer__info {
