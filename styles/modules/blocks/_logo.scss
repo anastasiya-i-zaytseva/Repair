@@ -1,0 +1,42 @@
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 60px;
+
+    &_footer {
+        margin-bottom: 84px;
+
+        @include laptop {
+            margin-bottom: 184px;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: $pramaryColorLetters;
+        margin: 0 20px 0 0;
+
+        @include phones {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0 16px 0 0;
+        }
+    }
+
+    &__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        color: $secondaryColorLetters;
+        background-color: $thirdColorBackground;
+        border-radius: 4px;
+        padding: 4px 8px 4px 8px;
+        margin: 0;
+        text-align: center;
+    }
+}

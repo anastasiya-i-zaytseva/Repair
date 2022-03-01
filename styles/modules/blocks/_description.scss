@@ -9,30 +9,10 @@
         margin: 0 20px 70px 20px;
     }
 
-    &__title {
-        margin: 0 0 60px 0;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 32px;
-        line-height: 40px;
-        color: $pramaryColorLetters;
-
-        @include laptop {
-            font-size: 20px;
-            line-height: 30px;
-        }
-
-        @include phones {
-            font-size: 12px;
-            line-height: 18px;
-            margin: 0 0 40px 0;
-        }
-    }
-
     &__elements {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        margin: 0;
+        margin: 60px 0 0  0;
         padding: 0;
         column-gap: 20px;
 
@@ -43,6 +23,7 @@
         }
 
         @include phones {
+            margin: 40px 0 0  0;
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(4, 1fr);
         }
