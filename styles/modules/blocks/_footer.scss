@@ -10,11 +10,16 @@
     }
 
     &__info {
+        margin-top: 18px;
         display: flex;
         justify-content: space-between;
 
         @include laptop {
             flex-direction: column;
+        }
+
+        @include phones {
+            margin-top: 10px;
         }
     }
 

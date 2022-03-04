@@ -5,12 +5,13 @@
     row-gap: 20px;
 
     @include laptop {
+        margin: 0 60px 120px 60px;
         grid-template-rows: [start] 230px [end] 334px;
     }
 
     @include phones {
         margin: 0 20px 60px 20px;
-       display: block;
+        display: block;
     }
 
     &__grid-top {

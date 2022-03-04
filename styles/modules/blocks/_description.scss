@@ -34,6 +34,11 @@
         background: $sixthColorBackground;
         border-radius: 10px;
         list-style-type: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $eighthColorBackground;
+        }
 
         &-title {
             margin: 0 0 38px 0;

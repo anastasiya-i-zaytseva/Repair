@@ -4,10 +4,17 @@
     align-items: center;
     margin-bottom: 60px;
 
+    @include laptop {
+        margin-bottom: 70px;
+    }
+    @include phones {
+        margin-bottom: 60px;
+    }
+
     &_footer {
         margin-bottom: 84px;
 
-        @include laptop {
+        @include phones {
             margin-bottom: 184px;
         }
     }

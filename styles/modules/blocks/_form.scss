@@ -5,7 +5,7 @@
         margin: 0 0 18px 0;
     }
         
-     @include laptop {
+    @include laptop {
         margin: 0 0 10px 0;
     }
 
@@ -15,39 +15,52 @@
         margin: 0;
         height: 50px;
         box-sizing: border-box;
-        max-width: 427px;
+        width: 348px;
         border-color: $fourthColorBackground;
         color: $pramaryColorLetters;
         padding: 0;
-        cursor: pointer;
+        cursor: pointer;            
+
+        
 
         &:hover {
             background-color: $seventhColorBackground;
         }
+
+    @include laptop {
+        width: 427px;
+    }
+
+        &_footer {
+            width: 348px;
+        }
+                
+    @include phones {
+        width: 229px;
+    }        
     }
 
     &__btn-save {
         background-color: $fifthColorBackground;
         color: $fifthColorBackground;
         border: none;
+        box-sizing: border-box;
         border-radius: 0px 8px 8px 0px;
         margin: 0 0 0 -5px;
         height: 50px;
         font-size: 13px;
         line-height: 20px;
-        max-width: 221px;
-        width: 100%;
-        padding: 0;            
+        width: 221px;           
 
-        @include tablets {
+        @include phones {
             font-size: 10px;
             line-height: 10px;
-            padding: 20px;
-            width: 23%;
+            width: 51px;
         }
 
         &-item {
             font-style: normal;
+            box-sizing: border-box;
             font-weight: 400;
             font-size: 14px;
             line-height: 24px;
@@ -56,7 +69,7 @@
             color: $pramaryColorLetters;
             margin-right: 10px;                
             
-            @include tablets {
+            @include phones {
                 display: none;                    
             }
         }
