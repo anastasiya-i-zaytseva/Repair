@@ -1,0 +1,50 @@
+.footer {
+    margin: 60px 160px 60px 160px;
+
+    @include laptop {
+        margin: 60px 60px 60px 60px;
+    }
+
+    @include phones {
+        margin: 30px 20px 20px 20px;
+    }
+
+    &__info {
+        margin-top: 18px;
+        display: flex;
+        justify-content: space-between;
+
+        @include laptop {
+            flex-direction: column;
+        }
+
+        @include phones {
+            margin-top: 10px;
+        }
+    }
+
+    &__text {
+        margin: 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $thirdColorLetters;
+
+        @include laptop {
+            margin-bottom: 60px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include phones {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}

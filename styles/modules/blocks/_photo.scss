@@ -1,0 +1,92 @@
+.photo {
+    margin: 0 30px 120px 30px;
+    display: grid;
+    grid-template-rows: [start] 230px [end] 552px;
+    row-gap: 20px;
+
+    @include laptop {
+        margin: 0 60px 120px 60px;
+        grid-template-rows: [start] 230px [end] 334px;
+    }
+
+    @include phones {
+        margin: 0 20px 60px 20px;
+        display: block;
+    }
+
+    &__grid-top {
+        display: grid;
+        grid-template-columns: [start] 448px [end] calc(100% - 448px - 20px); 
+        column-gap: 20px; 
+        
+        @include laptop {
+            grid-template-columns: [start] 448px [end] calc(100% - 448px - 20px);
+        }
+
+        @include phones {
+            display: block;
+        }
+
+        &-card-one {
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+
+            @include phones {
+                height: 142px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+        }
+
+        &-card-two {
+            background-color: $secondaryColorBackground;
+            border-radius: 10px;
+            width: 100%;
+            margin: 0;
+
+            @include phones {
+                height: 67px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+        }
+    } 
+
+    &__grid-buttom {
+        display: grid;
+        grid-template-columns: [start] calc(100% - 730px - 20px) [end] 730px;   
+        column-gap: 20px;  
+
+        @include laptop {
+            grid-template-columns: [start] calc(100% - 455px - 20px) [end] 455px;
+            column-gap: 20px;
+        }
+
+        @include phones {
+            display: block;
+        }
+
+        &-card-three {
+            background: $thirdColorBackground;
+            border-radius: 10px;
+            width: 100%;
+
+            @include phones {
+                height: 124px;
+                margin-bottom: 20px;
+                border-radius: 4px;
+            }
+        }
+
+        &-card-four {
+            border-radius: 10px;
+            width: 100%;
+
+            @include phones {
+                height: 211px;
+                border-radius: 4px;
+            }
+        }
+    }
+}

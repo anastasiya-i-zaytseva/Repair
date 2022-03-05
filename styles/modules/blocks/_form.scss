@@ -1,0 +1,77 @@
+.form {
+    margin: 0 0 12px 0;
+
+    &_footer {
+        margin: 0 0 18px 0;
+    }
+        
+    @include laptop {
+        margin: 0 0 10px 0;
+    }
+
+    &__input {
+        background-color: $fourthColorBackground;
+        border-radius: 8px 0px 0px 8px;
+        margin: 0;
+        height: 50px;
+        box-sizing: border-box;
+        width: 348px;
+        border-color: $fourthColorBackground;
+        color: $pramaryColorLetters;
+        padding: 0;
+        cursor: pointer;            
+
+        
+
+        &:hover {
+            background-color: $seventhColorBackground;
+        }
+
+    @include laptop {
+        width: 427px;
+    }
+
+        &_footer {
+            width: 348px;
+        }
+                
+    @include phones {
+        width: 229px;
+    }        
+    }
+
+    &__btn-save {
+        background-color: $fifthColorBackground;
+        color: $fifthColorBackground;
+        border: none;
+        box-sizing: border-box;
+        border-radius: 0px 8px 8px 0px;
+        margin: 0 0 0 -5px;
+        height: 50px;
+        font-size: 13px;
+        line-height: 20px;
+        width: 221px;           
+
+        @include phones {
+            font-size: 10px;
+            line-height: 10px;
+            width: 51px;
+        }
+
+        &-item {
+            font-style: normal;
+            box-sizing: border-box;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            text-align: center;
+            letter-spacing: 0.375px;
+            color: $pramaryColorLetters;
+            margin-right: 10px;                
+            
+            @include phones {
+                display: none;                    
+            }
+        }
+    }
+}

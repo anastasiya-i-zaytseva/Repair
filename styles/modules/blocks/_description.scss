@@ -1,0 +1,66 @@
+.description {
+    margin: 0 160px 120px 160px;
+
+    @include laptop {
+        margin: 0 60px 120px 60px;
+    }
+
+    @include phones {
+        margin: 0 20px 70px 20px;
+    }
+
+    &__elements {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 60px 0 0  0;
+        padding: 0;
+        column-gap: 20px;
+
+        @include laptop {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            row-gap: 20px;
+        }
+
+        @include phones {
+            margin: 40px 0 0  0;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }
+
+    &__element {
+        padding: 20px;
+        background: $sixthColorBackground;
+        border-radius: 10px;
+        list-style-type: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $eighthColorBackground;
+        }
+
+        &-title {
+            margin: 0 0 38px 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 18px;
+            color: $sixthColorLetters;
+        }
+
+        &-subtitle {
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 19px;
+            color: $fourthColorLetters;
+
+            @include phones {
+                font-size: 12px;
+                line-height: 18px;
+            }
+        }
+    }
+}

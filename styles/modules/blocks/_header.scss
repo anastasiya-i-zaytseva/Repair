@@ -1,0 +1,63 @@
+.header {
+    margin: 60px 160px 120px 160px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+
+    @include laptop {
+        margin: 60px 60px 52px 60px;
+    }
+
+    @include phones {
+        margin: 24px 20px 40px 20px;
+    }        
+
+    &__title {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 112px;
+        line-height: 112px;
+        color: $pramaryColorLetters;
+        margin: 0 0 20px 0;
+
+        @include laptop {
+            font-size: 70px;
+            line-height: 90px;
+            margin: 0;
+        }
+
+        @include phones {
+            font-size: 50px;
+            line-height: 60px;
+            margin: 0 0 10px 0;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 0 230px 0;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 70px;
+        color: $pramaryColorLetters;
+
+        @include laptop {
+            margin: 0 0 470px 0;
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        @include phones {
+            margin: 0 0 260px 0;
+            font-size: 30px;
+            line-height: 38px;
+        }
+    }
+
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        color: $thirdColorLetters;
+        margin: 0;
+    }
+}
